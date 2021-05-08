@@ -20,7 +20,7 @@ def mult(x, y):
 def factorial(n):
     r = 1
     for i in range(n): # range(n): 0, 1, 2,...,n-1.
-        r = r*add_one(i)
+        r = mult(r, add_one(i))
     return r
 
 print("add(3,4) = ", add(3,4))
